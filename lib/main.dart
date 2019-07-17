@@ -27,6 +27,7 @@ class RandomWordsState extends State<RandomWords> {
         return Divider();
       }
       final int index = i ~/ 2;
+
       if (index >= _suggestions.length) {
         _suggestions.addAll(generateWordPairs().take(10));
       }
